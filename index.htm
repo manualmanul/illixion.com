@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Illixion</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/index.js"></script>
+
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#993A37" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#7E302D" media="(prefers-color-scheme: dark)">
+
+    <!-- favicon stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#b91d47">
+
+</head>
+
+<body>
+    <div class="header-image">
+        <img src="images/illixion.png" alt="Illixion" />
+    </div>
+    <h1>Illixion</h1>
+    </header>
+    <main>
+        <section class="social-links">
+            <a href="https://twitter.com/illixion/"><img src="images/twitter.svg" alt="Twitter" /></a>
+            <a href="https://www.github.com/manualmanul/"><img src="images/github.svg" alt="GitHub" /></a>
+            <a href="http://twitch.tv/illixion"><img src="images/Twitch.svg" alt="Twitter" /></a>
+            <a href="https://ko-fi.com/illixion"><img src="images/kofi.svg" alt="Ko-Fi" /></a>
+            <a href="https://reddit.com/user/illixion"><img src="images/reddit.svg" alt="Reddit" /></a>
+            <a href="https://t.me/illixion"><img src="images/telegram.svg" alt="Telegram" /></a>
+            <a href="https://www.youtube.com/channel/UCvt2G4jXd2K2Bx_ITIynW3A"><img src="images/youtube.svg"
+                    alt="Twitter" /></a>
+        </section>
+        <section class="blog-posts">
+            <h2>Recent blog posts</h2>
+            <!-- this section will be populated by a script -->
+            <noscript>
+                <p>Cannot load recent posts without JavaScript.</p>
+            </noscript>
+
+            <!-- loader CSS -->
+            <div id="blog-post-loader" class="lds-facebook">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <span id="blog-post-list"></span>
+
+            <h4>
+                <a id="show-more-link">Show more</a>
+            </h4>
+        </section>
+        <section class="projects">
+            <h2>Projects</h2>
+            <!-- list of links with images next to them -->
+            <ul>
+                <li>
+                    <a href="https://kataprints.com">
+                        <img src="images/kataprints.png" alt="Kataprints" class="project-logo" />
+                    </a>
+                    <p>Kataprints is an online furry clothing and accessory store based in Riga, Latvia. Purchases
+                        support
+                        artists directly, products ship worldwide and you get high-quality items in return. I'm
+                        responsible for all of the technology behind the
+                        site, as well as PR and marketing.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="friend">
+            <!-- //TODO: add friend here -->
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+:root {
+    --main-bg-color: #121212;
+    --main-text-color: #eee;
+    --sub-text-color: #727272;
+    --main-link-color: #24c1ff;
+}
+
+/* base */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial,
+        sans-serif;
+    font-size: 14px;
+    color: #333333;
+    background-color: #fff;
+    margin-top: 2.5rem;
+    margin-bottom: 10rem;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    color: #0a6ebd;
+    text-decoration: none;
+}
+
+/* Dark mode */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: var(--main-text-color);
+        background-color: var(--main-bg-color);
+    }
+
+    a {
+        color: var(--main-link-color);
+        text-decoration: none;
+    }
+
+    a:focus,
+    a:hover {
+        color: var(--main-link-color);
+        text-decoration: underline;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: var(--main-bg-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+main>section {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+main>section>h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.header-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-image>img {
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+body>h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.social-links>a>img {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0.5rem;
+}
+
+.blog-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-posts>.lds-facebook {
+    height: 450px;
+}
+
+#show-more-link {
+    /* make it look like a link */
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--main-link-color);
+    border-radius: 0.25rem;
+    color: var(--main-link-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#show-more-link:hover {
+    background-color: var(--main-link-color);
+    color: #fff;
+}
+
+.post {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: var(--main-bg-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+
+}
+
+.projects>ul {
+    /* hide list dots */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.projects>ul>li {
+    /* add border */
+    border-bottom: 1px solid var(--sub-text-color);
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+
+}
+
+.project-logo {
+    max-width: 128px;
+}
+
+/* CSS loader */
+
+.lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #fff;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+}
+
+.lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+}
+
+.lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+}
+
+@keyframes lds-facebook {
+    0% {
+        top: 8px;
+        height: 64px;
+    }
+
+    50%,
+    100% {
+        top: 24px;
+        height: 32px;
+    }
+}
