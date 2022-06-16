@@ -54,6 +54,14 @@ a:hover {
         color: var(--main-link-color);
         text-decoration: underline;
     }
+
+    main {
+        background-color: #fff;
+    }
+
+    .post {
+        background-color: #fff;
+    }
 }
 
 body {
