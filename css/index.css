@@ -36,6 +36,11 @@ a:hover {
     text-decoration: none;
 }
 
+p {
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+}
+
 /* Dark mode */
 
 @media (prefers-color-scheme: dark) {
