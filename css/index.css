@@ -27,6 +27,37 @@ p {
     line-height: 1.5;
 }
 
+/* Light mode & default */
+
+body {
+    color: #333;
+    background-color: #fff;
+}
+
+a {
+    color: #24c1ff;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    color: #24c1ff;
+    text-decoration: underline;
+}
+
+main {
+    background-color: #fff;
+}
+
+.post {
+    background-color: #fafafa;
+}
+
+.lds-facebook div {
+    background: #666;
+}
+
+
 /* Dark mode */
 
 @media (prefers-color-scheme: dark) {
@@ -56,38 +87,6 @@ p {
 
     .lds-facebook div {
         background: #fff;
-    }
-}
-
-/* Light mode */
-
-@media (prefers-color-scheme: light) {
-    body {
-        color: #333;
-        background-color: #fff;
-    }
-
-    a {
-        color: #24c1ff;
-        text-decoration: none;
-    }
-
-    a:focus,
-    a:hover {
-        color: #24c1ff;
-        text-decoration: underline;
-    }
-
-    main {
-        background-color: #fff;
-    }
-
-    .post {
-        background-color: #fafafa;
-    }
-
-    .lds-facebook div {
-        background: #666;
     }
 }
 
